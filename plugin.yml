@@ -1,0 +1,13 @@
+name: KeyAll
+version: 1.0.0
+main: com.example.keyall.KeyAllPlugin
+api-version: '1.21'
+description: Gives each player a crate key after a set amount of their own playtime.
+commands:
+  keyall:
+    description: Check your KeyAll timer, or reload the config.
+    usage: /keyall [reload]
+permissions:
+  keyall.admin:
+    description: Allows /keyall reload
+    default: op

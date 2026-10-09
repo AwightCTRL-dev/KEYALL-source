@@ -1,0 +1,21 @@
+# Minutes of PLAYTIME (per player) needed to earn one key. 240 = 4 hours.
+interval-minutes: 240
+
+# The crate id used in Phoenix Crates commands (what you type in /crate giveKey <id> ...).
+crate-id: keyall
+
+# Command run from the console when a player earns a key.
+# Placeholders: %player% and %crate%
+command: "crate giveKey %crate% %player% 1"
+
+# false = idle players do not progress (recommended).
+# true  = everyone online progresses, even if standing still.
+count-afk-time: false
+
+# A player counts as idle after this many seconds with no movement,
+# looking around, clicking, chatting, or running commands.
+afk-after-seconds: 300
+
+# Message sent to the player when they earn a key. Supports & color codes.
+# Leave as "" to disable.
+reward-message: "&8[&bKeyAll&8] &aYou earned a &bKeyAll &akey for playing! Use it on the KeyAll crate."
